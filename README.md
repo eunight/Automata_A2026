@@ -128,7 +128,3 @@ python simulador.py
 ```
 
 El entorno de simulación permite forzar respuestas negativas del banco en tiempo real escribiendo el comando `error` en la consola, facilitando la auditoría de los casos límite de denegación de fondos y bloqueo por superación de intentos fallidos.
-
-```
-
-```
