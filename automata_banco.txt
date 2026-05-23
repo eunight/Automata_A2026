@@ -1,0 +1,17 @@
+#estados
+b_reposo,b_autenticando,b_verificando_fondos
+#alfabeto_entrada
+enviar_pin_banco,solicitar_fondos_banco,solicitar_saldo_banco,solicitar_cambio_banco
+#alfabeto_salida
+vok,verr,sok,serr
+#inicial
+b_reposo
+#terminales
+b_reposo
+#transiciones
+b_reposo,enviar_pin_banco,b_autenticando,vok
+b_autenticando,enviar_pin_banco,b_reposo,vok
+b_reposo,solicitar_fondos_banco,b_verificando_fondos,sok
+b_verificando_fondos,solicitar_fondos_banco,b_reposo,sok
+b_reposo,solicitar_saldo_banco,b_reposo,vok
+b_reposo,solicitar_cambio_banco,b_reposo,vok
